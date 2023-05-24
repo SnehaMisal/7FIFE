@@ -76,13 +76,13 @@
                         <div class="menu-title">Privacy Policy</div>
                     </a>
                 </li>
-                <!-- <li>
+                <li>
                     <a href="<?php echo base_url('term_condition') ?>">
                         <div class="parent-icon"><i class="lni lni-grid"></i>
                         </div>
                         <div class="menu-title">Term and Conditions</div>
                     </a>
-                </li> -->
+                </li>
 
             </ul>
             <!--end navigation-->
