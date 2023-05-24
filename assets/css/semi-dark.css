@@ -1,0 +1,81 @@
+html.semi-dark .sidebar-wrapper {
+    /* background-color: #1a2232; */
+    background: linear-gradient(to bottom, #261f2d 32%, #b123f3 100%);
+}
+
+html.semi-dark .sidebar-wrapper .sidebar-header {
+    background-color: #261f2d
+}
+
+html.semi-dark .sidebar-wrapper,
+html.semi-dark .sidebar-wrapper .sidebar-header {
+    border-right: 1px solid #1a2232;
+}
+
+html.semi-dark .top-header .navbar .searchbar .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
+
+html.semi-dark .sidebar-wrapper .sidebar-header {
+    /* border-bottom: 1px solid rgb(255 255 255 / 12%); */
+    border-bottom: none;
+    color: #fcfcfc;
+}
+
+html.semi-dark .sidebar-wrapper .sidebar-header .logo-text,
+html.semi-dark .sidebar-wrapper .sidebar-header .toggle-icon {
+    color: #fcfcfc;
+}
+
+html.semi-dark .sidebar-wrapper .metismenu .mm-active>a,
+html.semi-dark .sidebar-wrapper .metismenu a:active,
+html.semi-dark .sidebar-wrapper .metismenu a:focus,
+html.semi-dark .sidebar-wrapper .metismenu a:hover {
+    /* color: #fff;
+    text-decoration: none;
+    background: #3e4a60;
+    border-left: 4px solid #ffffff; */
+    /* color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(to right, #E80ca1, #261f2d);
+    border-left: 4px solid #ffffff;
+    font-weight: 500; */
+    color: #e80ca1;
+    text-decoration: none;
+    background: #fff;
+    border-left: 4px solid #e80ca1;
+}
+
+html.semi-dark .sidebar-wrapper .metismenu a {
+    /* color: #ffffff; */
+    color: rgb(255 255 255 / 80%);
+}
+
+html.semi-dark .sidebar-wrapper .metismenu ul {
+    border: 1px solid #ffffff00;
+}
+
+
+/* html.semi-dark .sidebar-wrapper .sidebar-header img {
+    filter: invert(1) grayscale(100%) brightness(200%);
+} */
+
+html.semi-dark .sidebar-wrapper .simplebar-scrollbar:before {
+    background: rgba(255, 255, 255, .4)
+}
+
+html.semi-dark .top-header .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+html.semi-dark .top-header .navbar .searchbar .form-control {
+    background-color: #f9fafb;
+}
+
+html.semi-dark .top-header .navbar .searchbar .form-control:focus {
+    background-color: #ffffff;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
