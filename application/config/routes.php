@@ -61,7 +61,8 @@ $route['dashboard'] = 'PageController/dashboard';
 $route['forgot_password'] = 'PageController/forgot_password';
 $route['admin_profile'] = 'PageController/admin_profile';
 $route['user_management'] = 'PageController/user_management';
-
+$route['user_profile'] = 'PageController/user_profile';
+$route['user_reward'] = 'PageController/user_reward';
 $route['privacy_policy'] = 'PageController/privacy_policy';
 $route['term_condition'] = 'PageController/term_condition';
 $route['push_notification'] = 'PageController/push_notification';
@@ -69,15 +70,18 @@ $route['notification'] = 'PageController/notification';
 $route['revenue_management'] = 'PageController/revenue_management';
 $route['subscription_plan'] = 'PageController/subscription_plan';
 $route['review_managment'] = 'PageController/review_managment';
-$route['user_report'] = 'PageController/user_report';
+$route['contact_submit_form'] = 'PageController/contact_submit_form';
 $route['reward_management'] = 'PageController/reward_management';
+$route['view_advertise'] = 'PageController/view_advertise';
+$route['manage_advertise'] = 'PageController/manage_advertise';
 // Setting
-// $route['add_language'] = 'PageController/add_language';
-// $route['create_categories'] = 'PageController/create_categories';
-// $route['create_subcategories'] = 'PageController/create_subcategories';
-// $route['create_album'] = 'PageController/create_album';
-// $route['add_artist'] = 'PageController/add_artist';
+$route['add_language'] = 'PageController/add_language';
+$route['create_categories'] = 'PageController/create_categories';
+$route['create_subcategories'] = 'PageController/create_subcategories';
+$route['create_album'] = 'PageController/create_album';
+$route['add_artist'] = 'PageController/add_artist';
 
 // Manage Songs
-// $route['import_song'] = 'PageController/import_song';
-// $route['song_list'] = 'PageController/song_list';
+$route['import_song'] = 'PageController/import_song';
+$route['edit_song'] = 'PageController/edit_song';
+$route['song_list'] = 'PageController/song_list';

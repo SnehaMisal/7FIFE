@@ -23,7 +23,20 @@ $(function() {
             }).addClass("").parent().addClass("mm-active"); o.is("li");) o = o.parent("").addClass("mm-show").parent("").addClass("mm-active")
     })
 
-
+// Active Sidemenu
+    // $(function() {
+    //     $("#menu li a").each(function() {
+    //         var pageUrl = window.location.href.split(/[?#]/)[0];
+    //         if (this.href == pageUrl) {
+    //             $(this).addClass("mm-active");
+    //             // $(this).parent().addClass("active"); // add active to li of the current link
+    //             $(this).parent().parent().parent().addClass("mm-active"); // add active class to an anchor
+    //             $(this).parent().parent().prev().click(); // click the item to make it drop
+    //             $(this).parent().parent().parent().parent().prev().click();
+    //             // $('.aside-menu .menu-item.active').parents('li').addClass('active');
+    //         }
+    //     });
+    // })
     $(".toggle-icon").click(function() {
         $(".wrapper").hasClass("toggled") ? ($(".wrapper").removeClass("toggled"), $(".sidebar-wrapper").unbind("hover")) : ($(".wrapper").addClass("toggled"), $(".sidebar-wrapper").hover(function() {
             $(".wrapper").addClass("sidebar-hovered")
@@ -166,39 +179,43 @@ $(document).ready(function() {
 
 
     // Dropify image
-    // $('.dropify').dropify();
+    $('.dropify').dropify();
 
     // Image preview
-    // $(".image-box").click(function(event) {
-    //     var previewImg = $(this).children("img");
+    $(".image-box").click(function(event) {
+        var previewImg = $(this).children("img");
 
-    //     $(this)
-    //         .siblings()
-    //         .children("input")
-    //         .trigger("click");
+        $(this)
+            .siblings()
+            .children("input")
+            .trigger("click");
 
-    //     $(this)
-    //         .siblings()
-    //         .children("input")
-    //         .change(function() {
-    //             var reader = new FileReader();
+        $(this)
+            .siblings()
+            .children("input")
+            .change(function() {
+                var reader = new FileReader();
 
-    //             reader.onload = function(e) {
-    //                 var urll = e.target.result;
-    //                 $(previewImg).attr("src", urll);
-    //                 previewImg.parent().css("background", "#efefef");
-    //                 previewImg.show();
-    //                 previewImg.siblings("p").hide();
-    //             };
-    //             reader.readAsDataURL(this.files[0]);
-    //         });
-    // });
+                reader.onload = function(e) {
+                    var urll = e.target.result;
+                    $(previewImg).attr("src", urll);
+                    previewImg.parent().css("background", "#efefef");
+                    previewImg.show();
+                    previewImg.siblings("p").hide();
+                };
+                reader.readAsDataURL(this.files[0]);
+            });
+    });
     // lightgallery
-    // jQuery(".lightgallery").length > 0 && $(".lightgallery").lightGallery({
-    //     loop: !0,
-    //     thumbnail: !0,
-    //     exThumbImage: "data-exthumbimage",
-    //     download: false,
-    //     share: false,
-    // });
+    jQuery(".lightgallery").length > 0 && $(".lightgallery").lightGallery({
+        loop: !0,
+        thumbnail: !0,
+        exThumbImage: "data-exthumbimage",
+        download: false,
+        share: false,
+    });
+    $('.select2').select2({
+        placeholder: "Select an option",
+    allowClear: true
+    });
 });

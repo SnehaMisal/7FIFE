@@ -14,7 +14,12 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/plugins/bootstrap-icons/font/bootstrap-icons.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/plugins/sweetalert2/sweetalert2.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/plugins/summernote/summernote-lite.min.css">
+<!-- lightgallery css -->
+<link rel="stylesheet" type="text/css"
+    href="<?php echo base_url() ?>assets/plugins/lightgallery/css/lightgallery.min.css">
 <!-- loader-->
+<!--dropify css  -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/plugins/dropify/css/dropify.min.css">
 <!-- <link rel="stylesheet" type="text/css"
     href="<?php echo base_url() ?>assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"> -->
 <!-- bootstrap toggle css -->
@@ -23,8 +28,7 @@
 <link href="<?php echo base_url() ?>assets/css/pace.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/select2.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/daterange-picker.css">
-<link rel="stylesheet" type="text/css"
-    href="<?php echo base_url() ?>assets/plugins/line-icon/lineicons.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/plugins/line-icon/lineicons.css">
 <!--Theme Styles-->
 <!-- <link href="assets/css/dark-theme.css" rel="stylesheet" /> -->
 <!-- <link href="assets/css/light-theme.css" rel="stylesheet" /> -->

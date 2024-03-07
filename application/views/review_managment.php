@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="p-l-0 card-body  pr-0 b-l-primary b-b-primary">
-                            <div class="row justify-content-between">
+                            <div class="row justify-content-between my-1">
                                 <div class="col-md-3">
                                     <form action="" class="d-flex">
                                     <div class="input-group">
@@ -56,11 +56,19 @@
                                     </form>
                                 </div>
                                 <div class="col-md-3">
-                                    <div
+                                <form action="" class="d-flex">
+                                        <div class="input-group">
+                                            <input class="form-control form-control-solid  ps-14" type="text"
+                                             name="" value="" placeholder="Search user">
+                                            <button class="btn btn-md btn-outline-primary" type="submit"> <i
+                                                    class="bi bi-search"></i></button>
+                                        </div>
+                                    </form>
+                                    <!-- <div
                                         class="d-flex align-items-center position-relative my-1 justify-content-end search-box">
                                         <input type="text" id="myInput" class="form-control form-control-solid  ps-14"
                                             placeholder="Search user">
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -90,9 +98,9 @@
                                                     <i class="bi bi-text-center"></i></button>
                                             </td>
                                             <td>
-                                                <button class="btn btn-outline-warning" type="button"
+                                            <button class="btn btn-outline-primary" type="button"
                                                     data-bs-toggle="modal" data-bs-target="#reply_model">
-                                                    <i class="bi bi-arrow-90deg-right"></i></button>
+                                                    <i class="bi bi-send-fill"></i></button>
                                             </td>
                                             <td>
                                                 <input type="checkbox" checked data-toggle="toggle" data-on="Publish"
@@ -115,9 +123,9 @@
                                                     <i class="bi bi-text-center"></i></button>
                                             </td>
                                             <td>
-                                                <button class="btn btn-outline-warning" type="button"
+                                            <button class="btn btn-outline-primary" type="button"
                                                     data-bs-toggle="modal" data-bs-target="#reply_model">
-                                                    <i class="bi bi-arrow-90deg-right"></i></button>
+                                                    <i class="bi bi-send-fill"></i></button>
                                             </td>
                                             <td>
                                                 <input type="checkbox" checked data-toggle="toggle" data-on="Publish"
@@ -140,9 +148,9 @@
                                                     <i class="bi bi-text-center"></i></button>
                                             </td>
                                             <td>
-                                                <button class="btn btn-outline-warning" type="button"
+                                            <button class="btn btn-outline-primary" type="button"
                                                     data-bs-toggle="modal" data-bs-target="#reply_model">
-                                                    <i class="bi bi-arrow-90deg-right"></i></button>
+                                                    <i class="bi bi-send-fill"></i></button>
                                             </td>
                                             <td>
                                                 <input type="checkbox" checked data-toggle="toggle" data-on="Publish"
@@ -165,9 +173,9 @@
                                                     <i class="bi bi-text-center"></i></button>
                                             </td>
                                             <td>
-                                                <button class="btn btn-outline-warning" type="button"
+                                            <button class="btn btn-outline-primary" type="button"
                                                     data-bs-toggle="modal" data-bs-target="#reply_model">
-                                                    <i class="bi bi-arrow-90deg-right"></i></button>
+                                                    <i class="bi bi-send-fill"></i></button>
                                             </td>
                                             <td>
                                                 <input type="checkbox" checked data-toggle="toggle" data-on="Publish"

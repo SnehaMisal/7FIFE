@@ -110,16 +110,22 @@
                             </div>
                         </div>
                         <div class="card-body b-l-primary b-b-primary">
-                            <div class="row justify-content-end">
+                            <div class="row justify-content-end my-1">
                                 <div class="col-md-3">
-                                    <div
+                                    <!-- <div
                                         class="d-flex align-items-center position-relative my-1 justify-content-end search-box">
-                                        <span class="search-icon svg-icon-1 position-absolute ms-6 m-r-10">
-                                            <i class="fa fa-search"></i>
-                                        </span>
+                                        
                                         <input type="text" id="myInput" class="form-control form-control-solid  ps-14"
                                             placeholder="Search user">
-                                    </div>
+                                    </div> -->
+                                    <form action="" class="d-flex">
+                                        <div class="input-group">
+                                            <input class="form-control form-control-solid  ps-14" type="text"
+                                             name="" value="" placeholder="Search user">
+                                            <button class="btn btn-md btn-outline-primary" type="submit"> <i
+                                                    class="bi bi-search"></i></button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 

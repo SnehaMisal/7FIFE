@@ -643,9 +643,9 @@ a {
     text-align: justify;
 }
 
-.table-responsive {
+/* .table-responsive {
     white-space: nowrap;
-}
+} */
 
 .fm-menu .list-group a {
     font-size: 16px;
@@ -1890,13 +1890,34 @@ table thead {
 }
 
 .card_header_bg {
-    color: #fff;
-    background: linear-gradient(to right, #261f2d, #af23ef);
+    color: #fff !important;
+    background: linear-gradient(to right, #261f2d, #af23ef) !important;
 }
 
 .card_header_bg_2 {
-    color: #fff;
-    background: linear-gradient(to right, #b424f7, #E80ca1);
+    color: #fff !important;
+    background: linear-gradient(to right, #b424f7, #E80ca1) !important;
+}
+
+
+/* .card_header_bg_3 {
+    color: #fff !important;
+    background: linear-gradient(to right, #E80ca1, #261f2d) !important;
+}
+
+.card_header_bg_4 {
+    color: #fff !important;
+    background: linear-gradient(to right, #261f2d, #af23ef) !important;
+} */
+
+.nav-pills a.active {
+    color: #fff !important;
+    background: linear-gradient(to right, #b424f7, #E80ca1) !important;
+}
+
+.nav-pills .nav-link {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .table>tbody>tr:nth-of-type(even) {
@@ -1920,14 +1941,14 @@ table thead {
 
 tbody:hover td {
     /* color: transparent !important;*/
-    text-shadow: 0 0 3px #aaa;
-    opacity: 0.1;
+    /* text-shadow: 0 0 3px #aaa; */
+    /* opacity: 0.1; */
 }
 
 tbody:hover tr:hover td {
     color: #261f2d !important;
     font-size: 15px;
-    font-weight: 500;
+    /* font-weight: 500; */
     opacity: 1;
     /* text-shadow: 0 1px 0 #fff; */
 }
@@ -2074,4 +2095,171 @@ tbody:hover tr:hover td {
     padding-left: 0px;
     list-style-type: none;
     margin-bottom: 0;
+}
+
+.lightgallery img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.dropify-wrapper .dropify-message span.file-icon {
+    font-size: 25px !important;
+}
+
+
+/* image preview */
+
+.file-upload .image-box,
+.file-upload .file-box {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    height: 150px;
+    width: 100%;
+    background: #efefef59;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.file-upload .image-box:hover,
+.file-upload .file-box:hover {
+    content: "SElect";
+    background: #0a050552;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.file-upload .image-box img {
+    height: 100%;
+    display: block;
+}
+
+.file-upload .image-box img:hover {
+    height: 100%;
+    display: block;
+    opacity: 0.7;
+}
+
+.file-upload .image-box p {
+    position: relative;
+    top: 45%;
+    color: #fff;
+}
+
+
+/* Video preview */
+
+.file-upload .video-box {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    height: 150px;
+    width: 100%;
+    background: #efefef59;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.file-upload .video-box:hover {
+    content: "SElect";
+    background: #0a050552;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.file-upload .video-box video {
+    height: 100%;
+    display: block;
+}
+
+.file-upload .video-box video:hover {
+    height: 100%;
+    display: block;
+    opacity: 0.7;
+}
+
+.file-upload .video-box p {
+    position: relative;
+    top: 45%;
+    color: #fff;
+}
+
+.file-upload .image-box.h-200,
+.file-upload .video-box.h-200 {
+    height: 200px;
+}
+
+
+/* End  preview */
+
+.toggle-off.btn {
+    padding-left: 1rem !important;
+}
+
+.lightgallery img {
+    width: 50px;
+    height: 50px;
+}
+
+.text-default {
+    color: #af23ef
+}
+
+.text-default-1 {
+    color: #e80ca1
+}
+
+.nav-pills-danger.nav-pills .nav-link.active {
+    color: #fff;
+    background: linear-gradient(to bottom, #b424f7, #E80ca1);
+}
+
+.vr {
+    margin: 0 10px
+}
+
+.top_box .card-body {
+    padding: 10px 30px;
+}
+
+.top_box .card-body p,
+.top_box .card-body h4 {
+    color: #000;
+}
+
+.revenue_tab .card-header {
+    background: linear-gradient(to right, #E80ca1, #b424f7);
+    padding: 10px 20px;
+}
+
+.revenue_tab .card-header h6 {
+    color: #fff;
+}
+
+.nav-pills-danger.nav-pills .nav-link.active {
+    color: #b424f7 !important;
+    background: #fff !important;
+    font-weight: 500 !important;
+}
+
+.nav-pills .nav-link {
+    margin: 5px;
+    border-radius: 0.25rem;
+    color: #230133;
+    background: rgba(99, 98, 231, 0.05);
+    border-radius: 10px;
+}
+.select2-container .select2-selection--single{
+    height: 38px !important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding: 4px;
+}
+.select2-container--default .select2-selection--single, .select2-container--default .select2-selection--multiple{
+    border: 1px solid #ced4da !important;
 }

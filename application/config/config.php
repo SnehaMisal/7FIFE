@@ -24,8 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/7FIFE/';
-//$config['base_url'] = 'http://192.168.0.154/7FIFE/';
 //$config['base_url'] = 'https://testingsites.in/7FIFE/';
+//$config['base_url'] = 'http://192.168.0.154/7FIFE/';
 /*
 |--------------------------------------------------------------------------
 | Index File

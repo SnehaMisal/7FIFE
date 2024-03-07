@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>7FIFE - User Report</title>
+    <title>7FIFE - Contact Submit Form</title>
     <?php $this->load->view('link/links'); ?>
 </head>
 
@@ -21,13 +21,13 @@
         <main class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3 justify-content-between">
-                <div class="breadcrumb-title pe-3">User Report</div>
+                <div class="breadcrumb-title pe-3">Contact Submit Form</div>
                 <div class="ps-3 bread_path">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0 p-0">
                             <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">User Report</li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact Submit Form</li>
                         </ol>
                     </nav>
                 </div>
@@ -39,12 +39,12 @@
                         <div class="card-header b-l-primary">
                             <div class="media media-dashboard">
                                 <div class="media-body">
-                                    <h5 class="mb-0">Report List</h5>
+                                    <h5 class="mb-0">User Contact Submit Form List</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="p-l-0 card-body  pr-0 b-l-primary b-b-primary">
-                            <div class="row justify-content-between">
+                            <div class="row justify-content-between my-1">
                                 <div class="col-md-3">
                                     <form action="" class="d-flex">
                                         <div class="input-group">
@@ -56,11 +56,19 @@
                                     </form>
                                 </div>
                                 <div class="col-md-3">
-                                    <div
+                                <form action="" class="d-flex">
+                                        <div class="input-group">
+                                            <input class="form-control form-control-solid  ps-14" type="text"
+                                             name="" value="" placeholder="Search user">
+                                            <button class="btn btn-md btn-outline-primary" type="submit"> <i
+                                                    class="bi bi-search"></i></button>
+                                        </div>
+                                    </form>
+                                    <!-- <div
                                         class="d-flex align-items-center position-relative my-1 justify-content-end search-box">
                                         <input type="text" id="myInput" class="form-control form-control-solid  ps-14"
                                             placeholder="Search user">
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -74,6 +82,7 @@
                                             <th> <span>Email</span></th>
                                             <th> <span>Subject</span></th>
                                             <th> <span>Message</span></th>
+                                            <th> <span>Reply</span></th>
                                             <th> <span>Action </span></th>
                                         </tr>
                                     </thead>
@@ -85,10 +94,14 @@
                                             <td>info@gmail.com</td>
                                             <td>Notification Title</td>
                                             <td>
-
                                                 <button class="btn btn-outline-success" type="button"
                                                     data-bs-toggle="modal" data-bs-target="#view_model">
                                                     <i class="bi bi-envelope"></i></button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-outline-primary" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#reply_model">
+                                                    <i class="bi bi-send-fill"></i></button>
                                             </td>
                                             <td>
                                                 <button class="btn btn-outline-danger" type="button" id="delete_1"
@@ -107,6 +120,11 @@
                                                     <i class="bi bi-envelope"></i></button>
                                             </td>
                                             <td>
+                                                <button class="btn btn-outline-primary" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#reply_model">
+                                                    <i class="bi bi-send-fill"></i></button>
+                                            </td>
+                                            <td>
                                                 <button class="btn btn-outline-danger" type="button" id="delete_2"
                                                     onclick=delete_fun(this)><i class="bi bi-trash3"></i></button>
                                             </td>
@@ -123,6 +141,11 @@
                                                     <i class="bi bi-envelope"></i></button>
                                             </td>
                                             <td>
+                                                <button class="btn btn-outline-primary" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#reply_model">
+                                                    <i class="bi bi-send-fill"></i></button>
+                                            </td>
+                                            <td>
                                                 <button class="btn btn-outline-danger" type="button" id="delete_3"
                                                     onclick=delete_fun(this)><i class="bi bi-trash3"></i></button>
                                             </td>
@@ -137,6 +160,11 @@
                                                 <button class="btn btn-outline-success " type="button"
                                                     data-bs-toggle="modal" data-bs-target="#view_model">
                                                     <i class="bi bi-envelope"></i></button>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-outline-primary" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#reply_model">
+                                                    <i class="bi bi-send-fill"></i></button>
                                             </td>
                                             <td>
                                                 <button class="btn btn-outline-danger" type="button" id="delete_4"
@@ -173,7 +201,7 @@
         <div class="overlay nav-toggle-icon"></div>
         <!--end overlay-->
     </div>
-    <!-- View User Report Modal -->
+    <!-- View Contact Submit Form Modal -->
     <div class="modal fade" id="view_model" tabindex="-1" role="dialog" aria-labelledby="view_modelLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -192,14 +220,44 @@
             </div>
         </div>
     </div>
+    <!-- Reply Modal -->
+    <div class="modal fade" id="reply_model" tabindex="-1" role="dialog" aria-labelledby="edit_modelLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header card_header_bg_2">
+                    <h5 class="modal-title" id="edit_modelLabel">Reply Massage </h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form class="needs-validation" novalidate="" method="post">
+                    <div class="modal-body">
+                        <div class="row g-3">
+                            <!-- Reply massage -->
+                            <div class="col-md-12">
+                                <label class="form-label">Description<span class="text-danger">*</span></label>
+                                <textarea class="summernote mb-0 " name="example" required="required">
+        
+                                </textarea>
+                                <div class="invalid-feedback">Please Enter Description.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" type="button" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" type="submit" id="form_sub">Reply</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <?php $this->load->view('link/script'); ?>
     <script>
     $(document).ready(function() {
         // summernote Script
         $('.summernote').summernote({
-            height: 350,
-            minHeight: 350,
-            maxHeight: 350,
+            height: 200,
+            minHeight: 200,
+            maxHeight: 200,
         });
     });
     </script>

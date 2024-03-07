@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="p-l-0 card-body  pr-0 b-l-primary b-b-primary">
-                            <div class="row justify-content-between">
+                            <div class="row justify-content-between my-1">
                                 <div class="col-md-3">
                                     <form action="" class="d-flex">
                                         <button type="button" class="btn btn-md btn-primary mb-0" onclick="exportexcel()">
@@ -58,16 +58,24 @@
                                     </form>
                                 </div>
                                 <div class="col-md-3">
-                                    <div
+                                    <!-- <div
                                         class="d-flex align-items-center position-relative my-1 justify-content-end search-box">
                                         <input type="text" id="myInput" class="form-control form-control-solid  ps-14"
                                             placeholder="Search user">
-                                    </div>
+                                    </div> -->
+                                    <form action="" class="d-flex">
+                                        <div class="input-group">
+                                            <input class="form-control form-control-solid  ps-14" type="text"
+                                             name="" value="" placeholder="Search user">
+                                            <button class="btn btn-md btn-outline-primary" type="submit"> <i
+                                                    class="bi bi-search"></i></button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 
                             <div class="table-responsive custom-scrollbar ">
-                                <table class="table table-border text-center table-hover table-striped" id="myTable">
+                                <table class="table table-border text-center table-hover" id="myTable">
                                     <thead>
                                         <tr class="border-bottom-primary">
                                             <th> <span>Sr. No </span></th>

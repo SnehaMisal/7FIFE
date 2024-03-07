@@ -49,7 +49,14 @@ class PageController extends CI_Controller {
 	{
 		$this->load->view('user_management');
 	}
-	
+	public function user_profile()
+	{
+		$this->load->view('user_profile');
+	}
+	public function user_reward()
+	{
+		$this->load->view('user_reward');
+	}
 	public function privacy_policy()
 	{
 		$this->load->view('privacy_policy');
@@ -78,43 +85,55 @@ class PageController extends CI_Controller {
 	{
 		$this->load->view('review_managment');
 	}
-	public function user_report()
+	public function contact_submit_form()
 	{
-		$this->load->view('user_report');
+		$this->load->view('contact_submit_form');
 	}
 	public function reward_management()
 	{
 		$this->load->view('reward_management');
 	}
+	public function view_advertise()
+	{
+		$this->load->view('view_advertise');
+	}
+	public function manage_advertise()
+	{
+		$this->load->view('manage_advertise');
+	}
 	// Setting
-	// public function add_language()
-	// {
-	// 	$this->load->view('setting/add_language');
-	// }
-	// public function create_categories()
-	// {
-	// 	$this->load->view('setting/create_categories');
-	// }
-	// public function create_subcategories()
-	// {
-	// 	$this->load->view('setting/create_subcategories');
-	// }
-	// public function create_album()
-	// {
-	// 	$this->load->view('setting/create_album');
-	// }
-	// public function add_artist()
-	// {
-	// 	$this->load->view('setting/add_artist');
-	// }
+	public function add_language()
+	{
+		$this->load->view('setting/add_language');
+	}
+	public function create_categories()
+	{
+		$this->load->view('setting/create_categories');
+	}
+	public function create_subcategories()
+	{
+		$this->load->view('setting/create_subcategories');
+	}
+	public function create_album()
+	{
+		$this->load->view('setting/create_album');
+	}
+	public function add_artist()
+	{
+		$this->load->view('setting/add_artist');
+	}
 
 	// Manage Songs
-	// public function import_song()
-	// {
-	// 	$this->load->view('manage_song/import_song');
-	// }
-	// public function song_list()
-	// {
-	// 	$this->load->view('manage_song/song_list');
-	// }
+	public function import_song()
+	{
+		$this->load->view('import_song');
+	}
+	public function song_list()
+	{
+		$this->load->view('song_list');
+	}
+	public function edit_song()
+	{
+		$this->load->view('edit_song');
+	}
 }

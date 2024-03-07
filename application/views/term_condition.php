@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
     <div class="wrapper">
         <!--start top header-->
         <?php include 'common_files/header.php'?>

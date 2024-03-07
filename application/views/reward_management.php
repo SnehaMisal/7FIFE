@@ -12,10 +12,10 @@
     #myTable {
         table-layout: fixed;
     }
-    input[type='number']{
+
+    input[type='number'] {
         border: 1px solid #7e21aa;
     }
-
     </style>
 </head>
 
@@ -45,6 +45,20 @@
             </div>
             <!--end breadcrumb-->
             <div class="row justify-content-center mt-5">
+            <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="" class="">
+                                <label class="form-label">This Amount is set for 1 reward coin.</label>
+                                <div class="input-group">
+                                    <input class="form-control form-control-solid  ps-14" value="10" type="text" id=""
+                                        name="" placeholder="This Amount is set for 1 reward coin" required>
+                                    <button class="btn btn-md btn-outline-default" type="submit">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-xl-12 col-md-12">
                     <div class="card ">
                         <div class="card-header b-l-primary">
@@ -62,7 +76,7 @@
                                             <tr class="border-bottom-primary">
                                                 <th> <span>Sr. No. </span></th>
                                                 <th> <span>Score</span></th>
-                                                <th> <span>Reward</span></th>
+                                                <th> <span>Reward Coin</span></th>
                                                 <th> <span>Action </span></th>
                                             </tr>
                                         </thead>
